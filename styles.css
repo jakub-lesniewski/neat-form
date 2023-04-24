@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+
+:root {
+  --font-family: "Lato", sans-serif;
+  --gradient-color-main: #cc2b5e;
+  --gradient-color-complementary: #753a88;
+  --container-bg: #fafcff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--gradient-color-main); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    var(--gradient-color-complementary),
+    var(--gradient-color-main)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    var(--gradient-color-complementary),
+    var(--gradient-color-main)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-family: var(--font-family);
+  background: var(--container-bg);
+  width: 25rem;
+  height: 45rem;
+}
+
+.form-header {
+  margin: 4rem 0 2rem 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
